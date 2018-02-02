@@ -1,0 +1,36 @@
+.about {
+    margin: 0 3rem;
+    padding: 3rem;
+
+    &__stats {
+
+        &__list {
+            list-style: none;
+            border: 2px solid $color-salmon-dark;
+            border-radius: 10px;
+            overflow: hidden;
+
+
+            &__item {
+                font-size: 1.6rem;
+                padding: 1rem;
+            }
+            &__item:nth-child(2n){
+                background-color: $color-orange-dark;
+                color: white;
+            }
+        }
+
+    }
+}
+
+
+.profile {
+    img {
+        width: 100%;
+    }
+}
+
+.bio {
+    font-size: 1.6rem;
+}

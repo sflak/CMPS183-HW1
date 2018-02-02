@@ -32,10 +32,42 @@ body {
 .heading-primary {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  font-size: 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ee5253, #ff9ff3);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.heading-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
   font-size: 2rem;
-  text-transform: uppercase; }
+  color: #01a3a4; }
 
 .paragraph {
+  font-size: 1.6rem; }
+
+.about {
+  margin: 0 3rem;
+  padding: 3rem; }
+  .about__stats__list {
+    list-style: none;
+    border: 2px solid #ee5253;
+    border-radius: 10px;
+    overflow: hidden; }
+    .about__stats__list__item {
+      font-size: 1.6rem;
+      padding: 1rem; }
+    .about__stats__list__item:nth-child(2n) {
+      background-color: #ff9f43;
+      color: white; }
+
+.profile img {
+  width: 100%; }
+
+.bio {
   font-size: 1.6rem; }
 
 .row {
@@ -119,3 +151,6 @@ body {
         color: white; }
       .navigation__link a:hover, .navigation__link a:active {
         border-bottom: 4px solid #ff9f43; }
+
+.section__content {
+  padding: 3rem; }

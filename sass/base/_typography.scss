@@ -8,8 +8,22 @@ body {
 .heading-primary {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
+    display: inline-block;
     text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-salmon-dark, $color-pink-light);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.heading-secondary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $color-teal-dark;
+   
 }
 .paragraph {
     font-size: 1.6rem;
