@@ -1,0 +1,32 @@
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, $color-salmon-dark 70%, $color-orange-light );
+    height: 6rem;
+
+}
+
+.footer-links {
+    list-style: none;
+
+    &__link {
+        display: inline-block;
+        float: left;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+
+        &:first-child {
+            margin-left: 3rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
