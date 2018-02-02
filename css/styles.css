@@ -18,8 +18,7 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -28,7 +27,16 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   line-height: 1.7;
-  color: #777; }
+  color: #222f3e; }
+
+.heading-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
 
 .row {
   max-width: 114rem;
@@ -72,11 +80,42 @@ body {
   .row .col-3-of-4 {
     width: calc( 3 *((100% - 3 * 6rem) / 4 ) + 2 * 6rem); }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  text-transform: uppercase; }
+.header {
+  width: 100%;
+  height: 6rem;
+  background-color: #01a3a4;
+  position: relative; }
+  .header nav {
+    height: 100%; }
+  .header__title {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: .3rem; }
 
-p {
-  font-size: 1.6rem; }
+.navigation {
+  list-style: none;
+  font-size: 1.6rem;
+  height: 100%; }
+  .navigation::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .navigation__link {
+    height: 100%;
+    padding-top: 1.5rem;
+    display: inline-block;
+    float: left;
+    margin-left: 2rem; }
+    .navigation__link a {
+      display: inline-block;
+      height: 100%; }
+      .navigation__link a:link, .navigation__link a:visited {
+        text-decoration: none;
+        color: white; }
+      .navigation__link a:hover, .navigation__link a:active {
+        border-bottom: 4px solid #ff9f43; }
