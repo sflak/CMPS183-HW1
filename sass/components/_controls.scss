@@ -1,10 +1,11 @@
 .controls {
     min-height: 4rem;
-    // background-color: $color-salmon-dark;
+    margin-top: $u-margin-medium;
+    margin-bottom: $u-margin-small;
 
     background-image: linear-gradient( 130deg, 
-        $color-salmon-dark 50%,
-        white 50%);
+        $color-salmon-dark 35%,
+        white 35%);
     
     &__title {
         color: white;
@@ -35,6 +36,7 @@
         padding: .5rem;
         color: white;
         font-size: 1.3rem;
+        font-family: inherit;
         cursor: pointer;
 
         transition: all .2s;
@@ -49,6 +51,9 @@
             transform: translateY(-2px);
             box-shadow: 0 1px 5px $color-shadow;
         }   
+        &:active{
+            background-color: $color-salmon-light;
+        }
     }
     
 }

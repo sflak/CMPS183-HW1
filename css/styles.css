@@ -49,7 +49,11 @@ body {
 .paragraph {
   font-size: 1.6rem; }
 
+.no-margin {
+  margin: 0 !important; }
+
 .steven {
+  margin-top: 2rem;
   margin-left: 6rem; }
 
 .about {
@@ -76,7 +80,9 @@ body {
 
 .controls {
   min-height: 4rem;
-  background-image: linear-gradient(130deg, #ee5253 50%, white 50%); }
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(130deg, #ee5253 35%, white 35%); }
   .controls__title {
     color: white;
     font-size: 2rem;
@@ -98,6 +104,7 @@ body {
     padding: .5rem;
     color: white;
     font-size: 1.3rem;
+    font-family: inherit;
     cursor: pointer;
     transition: all .2s; }
     .controls__button:hover {
@@ -106,6 +113,49 @@ body {
     .controls__button:active, .controls__button:focus {
       transform: translateY(-2px);
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+    .controls__button:active {
+      background-color: #ff6b6b; }
+
+.todo {
+  margin-bottom: 6rem; }
+  .todo__content:not(:first-child) {
+    margin-top: 2rem; }
+  .todo__checkbox-input {
+    display: none; }
+  .todo__checkbox-label {
+    font-size: 2rem;
+    color: #ff6b6b;
+    position: relative;
+    padding-left: 2rem; }
+  .todo__checkbox-input:checked + .todo__checkbox-label {
+    text-decoration: line-through;
+    color: #feca57; }
+  .todo__checkbox-button {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 2px solid #01a3a4;
+    position: absolute;
+    left: 0;
+    top: .5rem; }
+    .todo__checkbox-button::after {
+      opacity: 0;
+      content: "";
+      display: block;
+      height: .6rem;
+      width: .6rem;
+      background-color: #01a3a4;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .todo__checkbox-input:checked ~ .todo__checkbox-label .todo__checkbox-button::after {
+    opacity: 1; }
+  .todo__notes {
+    font-size: 1.4rem;
+    width: 70%; }
+  .todo__checkbox-input:checked ~ .todo__notes {
+    color: #c2c0c0; }
 
 .row {
   max-width: 114rem;
@@ -150,7 +200,7 @@ body {
     width: calc( 3 *((100% - 3 * 6rem) / 4 ) + 2 * 6rem); }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -216,9 +266,3 @@ body {
         color: white; }
       .navigation__link a:hover, .navigation__link a:active {
         border-bottom: 4px solid #ff9f43; }
-
-.section__content {
-  padding: 3rem; }
-
-.todo {
-  margin-top: 8rem; }
