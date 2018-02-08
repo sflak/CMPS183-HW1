@@ -1,0 +1,27 @@
+.form {
+    &__todo {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        &__input {
+            margin-bottom: 3rem;
+            border: 1px solid $color-salmon-light;
+            padding: .5rem;
+
+            &:focus {
+                border: 1px solid $color-teal-light;
+            }
+        }
+
+        &__label {
+            font-size: 1.3rem;
+            color: $color-teal-dark;
+        }
+
+    }
+}
+
+textarea {
+    resize: none;
+}

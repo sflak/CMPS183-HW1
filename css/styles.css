@@ -52,6 +52,9 @@ body {
 .no-margin {
   margin: 0 !important; }
 
+.u-empty-content {
+  opacity: 0; }
+
 .steven {
   margin-top: 2rem;
   margin-left: 6rem; }
@@ -80,7 +83,7 @@ body {
 
 .controls {
   min-height: 4rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   background-image: linear-gradient(130deg, #ee5253 35%, white 35%); }
   .controls__title {
@@ -115,6 +118,9 @@ body {
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
     .controls__button:active {
       background-color: #ff6b6b; }
+
+.empty-content {
+  opacity: 0; }
 
 .todo {
   margin-bottom: 6rem; }
@@ -151,11 +157,33 @@ body {
       transform: translate(-50%, -50%); }
   .todo__checkbox-input:checked ~ .todo__checkbox-label .todo__checkbox-button::after {
     opacity: 1; }
+  .todo__due-date {
+    float: right;
+    padding-right: 2rem; }
   .todo__notes {
     font-size: 1.4rem;
     width: 70%; }
   .todo__checkbox-input:checked ~ .todo__notes {
     color: #c2c0c0; }
+  .todo__checkbox-input:checked ~ .todo__checkbox-label .todo__due-date {
+    color: #ff9ff3; }
+
+.form__todo {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; }
+  .form__todo__input {
+    margin-bottom: 3rem;
+    border: 1px solid #ff6b6b;
+    padding: .5rem; }
+    .form__todo__input:focus {
+      border: 1px solid #00d2d3; }
+  .form__todo__label {
+    font-size: 1.3rem;
+    color: #01a3a4; }
+
+textarea {
+  resize: none; }
 
 .row {
   max-width: 114rem;
@@ -265,4 +293,4 @@ body {
         text-decoration: none;
         color: white; }
       .navigation__link a:hover, .navigation__link a:active {
-        border-bottom: 4px solid #ff9f43; }
+        border-bottom: 4px solid #ff6b6b; }
