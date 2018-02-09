@@ -171,16 +171,27 @@ body {
 .form__todo {
   display: flex;
   flex-flow: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: flex-start; }
   .form__todo__input {
     margin-bottom: 3rem;
     border: 1px solid #ff6b6b;
-    padding: .5rem; }
+    padding: .5rem;
+    width: 100%; }
     .form__todo__input:focus {
       border: 1px solid #00d2d3; }
   .form__todo__label {
     font-size: 1.3rem;
     color: #01a3a4; }
+  .form__todo__button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #ff9f43;
+    border: 0 none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.4rem;
+    font-family: inherit; }
 
 textarea {
   resize: none; }
