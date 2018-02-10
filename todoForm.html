@@ -20,32 +20,38 @@
         <nav>
             <ul class="navigation">
                 <li class="navigation__link"><a href="./index.html">Home</a></li>
-                <li class="navigation__link"><a href="./todo.html">Todo</a></li>
-                <li class="navigation__link"><a active href="./todoForm.html">Form</a></li>
+                <li class="navigation__link"><a href="./todo.html">Todo List</a></li>
+                <li class="navigation__link"><a active href="./todoForm.html">Todo Form</a></li>
             </ul>
         </nav>
     </header>
 
-   <div class="row">
-       <div class="col-1-of-2">
-           <h1 class="heading-primary">Todo Form</h1>
-           <div class="form">
-               <form action="#" class="form__todo">
-                   <label for="title" class="form__todo__label">Title</label>
-                   <input autofocus type="text" class="form__todo__input" id="title" placeholder="Title" />
-                   <label for="date" class="form__todo__label">Due Date</label>
-                   <input type="date" class="form__todo__input" id="date" placeholder="Date" />
-                   <label for="notes" class="form__todo__label">Notes</label>
-                   <textarea cols=20 rows=5 class="form__todo__input" id="notes"></textarea>
-                   <input type="submit" value="Submit" class="form__todo__button">
-               </form>
-           </div>
-       </div>
-       <div class="col-1-of-4 u-empty-content">empty</div>
-       <div class="col-1-of-4">
-           <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum minus! Repellendus odit illum laudantium fugit, commodi magni veritatis doloremque quae. Amet tempora exercitationem labore laudantium aspernatur veritatis vero repellat?</p>
-       </div>
-   </div>
+    <section class="section-form">
+        <div class="row">
+            <div class="col-1-of-2">
+                <h1 class="heading-primary">Todo Form</h1>
+                <div class="form">
+                    <form action="#" class="form__todo">
+                        <label for="title" class="form__todo__label">Title</label>
+                        <input autofocus type="text" class="form__todo__input" id="title" placeholder="Title" />
+                        <label for="date" class="form__todo__label">Due Date</label>
+                        <input type="date" class="form__todo__input" id="date" placeholder="Date" />
+                        <label for="notes" class="form__todo__label">Notes</label>
+                        <textarea cols=20 rows=5 class="form__todo__input" id="notes"></textarea>
+                        <input type="submit" value="Submit" class="form__todo__button">
+                    </form>
+                </div>
+            </div>
+            <div class="col-1-of-4 u-empty-content">empty</div>
+            
+        </div>
+        <div class="col-1-of-4">
+            <div class="sidebar">
+                <p class="paragraph">This part was pretty easy. In order to get the layout I wanted for the inputs, I had to use flexbox. Other than that, there's nothing special to note about this page.</p>
+            </div>
+        </div>
+    </section>
+   
 
     <footer class="footer">
         <ul class="footer-links">

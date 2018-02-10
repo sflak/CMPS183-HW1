@@ -29,6 +29,10 @@
     }
 }
 
+.info {
+    float: right;
+}
+
 
 .profile {
     img {
@@ -39,4 +43,10 @@
 .bio {
     font-size: 1.6rem;
     margin-left: 5rem;
+    margin-bottom: $u-margin-medium;
+}
+.schedule {
+    font-size: 1.6rem;
+    margin-left: 5rem;
+    margin-bottom: $u-margin-medium;
 }

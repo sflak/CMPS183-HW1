@@ -80,12 +80,21 @@ body {
       background-color: #ff9f43;
       color: white; }
 
+.info {
+  float: right; }
+
 .profile img {
   width: 100%; }
 
 .bio {
   font-size: 1.6rem;
-  margin-left: 5rem; }
+  margin-left: 5rem;
+  margin-bottom: 6rem; }
+
+.schedule {
+  font-size: 1.6rem;
+  margin-left: 5rem;
+  margin-bottom: 6rem; }
 
 .controls {
   min-height: 4rem;
@@ -313,3 +322,21 @@ textarea {
         color: white; }
       .navigation__link a:hover, .navigation__link a:active {
         border-bottom: 4px solid #ff6b6b; }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  border-left: 3px solid #ee5253;
+  padding: 3rem 3rem 59rem 3rem; }
+
+.section__content {
+  position: relative; }
+
+.todo-section {
+  position: relative; }
+
+.section-form {
+  position: relative; }
