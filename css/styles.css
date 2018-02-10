@@ -55,6 +55,12 @@ body {
 .u-empty-content {
   opacity: 0; }
 
+.u-invisible {
+  display: none; }
+
+.u-visible {
+  display: block; }
+
 .steven {
   margin-top: 2rem;
   margin-left: 6rem; }

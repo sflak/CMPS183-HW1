@@ -1,11 +1,18 @@
 $(document).ready(function() {
     $("#all").click(function() {
-        console.log("Show all clicked");
+        
+        $("input:checked").siblings().removeClass("u-invisible");
+        $("input:not(:checked)").siblings().removeClass("u-invisible");
+        
     });
     $("#todo").click(function() {
-        console.log("Show todo clicked");
+        
+        $("input:not(:checked)").siblings().removeClass("u-invisible");
+        $("input:checked").siblings().addClass("u-invisible");
     });
     $("#complete").click(function() {
-        console.log("Show complete clicked");
+        
+        $("input:checked").siblings().removeClass("u-invisible");
+        $("input:not(:checked)").siblings().addClass("u-invisible");
     });
 });
